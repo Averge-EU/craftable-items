@@ -1,0 +1,7 @@
+name: CraftableItems
+version: 1.0.0
+main: de.herobrinepromc.CraftableItems
+api-version: 1.18
+prefix: [ CraftableItems ]
+load: STARTUP
+authors: [ HerobrineProMC ]
