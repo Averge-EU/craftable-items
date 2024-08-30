@@ -36,6 +36,27 @@ public final class CraftableItems extends JavaPlugin {
             Bukkit.addRecipe(elytra);
             System.out.println("[CraftableItems] Elytra hinzugefügt!");
         }
+        {
+            ShapedRecipe diamondhorsearmor = new ShapedRecipe(new ItemStack(Material.DIAMOND_HORSE_ARMOR, 1));
+            diamondhorsearmor.shape(new String[] {"D D","DDD","D D"});
+            diamondhorsearmor.setIngredient('D', Material.DIAMOND);
+            Bukkit.addRecipe(diamondhorsearmor);
+            System.out.println("[CraftableItems] Diamant-Pferderüstung hinzugefügt!");
+        }
+        {
+            ShapedRecipe goldhorsearmor = new ShapedRecipe(new ItemStack(Material.GOLDEN_HORSE_ARMOR, 1));
+            goldhorsearmor.shape(new String[] {"G G","GGG","G G"});
+            goldhorsearmor.setIngredient('G', Material.GOLD_INGOT);
+            Bukkit.addRecipe(goldhorsearmor);
+            System.out.println("[CraftableItems] Gold-Pferderüstung hinzugefügt!");
+        }
+        {
+            ShapedRecipe ironhorsearmor = new ShapedRecipe(new ItemStack(Material.IRON_HORSE_ARMOR, 1));
+            ironhorsearmor.shape(new String[] {"I I","III","I I"});
+            ironhorsearmor.setIngredient('I', Material.IRON_INGOT);
+            Bukkit.addRecipe(ironhorsearmor);
+            System.out.println("[CraftableItems] Eisen-Pferderüstung hinzugefügt!");
+        }
         System.out.println("[CraftableItems] Das Plugin wurde geladen!");
     }
 
