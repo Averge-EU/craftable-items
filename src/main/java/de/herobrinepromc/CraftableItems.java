@@ -57,6 +57,23 @@ public final class CraftableItems extends JavaPlugin {
             Bukkit.addRecipe(ironhorsearmor);
             System.out.println("[CraftableItems] Eisen-Pferderüstung hinzugefügt!");
         }
+        {
+            ShapedRecipe netherbricks = new ShapedRecipe(new ItemStack(Material.NETHER_BRICKS, 1));
+            netherbricks.shape(new String[] {" W ","WZW"," W "});
+            netherbricks.setIngredient('W', Material.NETHER_WART);
+            netherbricks.setIngredient('Z', Material.STONE_BRICKS);
+            Bukkit.addRecipe(netherbricks);
+            System.out.println("[CraftableItems] Netherziegel wurde hinzugefügt!");
+        }
+        {
+            ShapedRecipe dragonegg = new ShapedRecipe(new ItemStack(Material.DRAGON_EGG, 2)):
+            dragonegg.shape(new String[] {"ODO","OEO","OOO"});
+            dragonegg.setIngredient('O', Material.OBSIDIAN);
+            dragonegg.setIngredient('D', Material.DRAGON_EGG);
+            dragonegg.setIngredient('E', Material.EGG);
+            Bukkit.addRecipe(dragonegg);
+            System.out.println("[CraftableItems] Drachenei wurde hinzugefügt!");
+        }
         System.out.println("[CraftableItems] Das Plugin wurde geladen!");
     }
 
